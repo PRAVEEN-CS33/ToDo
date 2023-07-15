@@ -1,0 +1,70 @@
+.card{
+    width: 24vw;
+    height: 40vh;
+    padding: 2vh;
+    margin: 1vh;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.65);
+    flex-direction: column;
+  }
+  .card:hover{
+    box-shadow: 0 8px 32px 0 rgba(68, 68, 68, 0.37);
+    
+}
+.text{
+  width: 22vw;
+  height: 30vh;
+  padding: 2vh;
+  text-align: justify;
+  overflow: scroll;
+}
+
+.text p{
+  padding-top: 10px;
+  word-wrap: break-word;
+}
+.text::-webkit-scrollbar{
+  display: none;
+}
+.bttn{
+  display: flex;
+  justify-content: space-around;
+}
+.tle{
+  border-bottom: 2px solid #B6B6B6;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1280px) {
+  .card{
+    width: 23vw;
+  }
+  .text{
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-container::-webkit-scrollbar { 
+    display: none;
+  }
+  .card{
+    width: 40vw;
+    margin: 2vh;
+  }
+  .text{
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-container::-webkit-scrollbar { 
+    display: none;
+  }
+  .text{
+    width: 100%;
+    padding: 1vh;
+  }
+  .card{
+    width: 80vw;
+  }
+}
